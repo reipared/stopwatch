@@ -1,4 +1,12 @@
+/*
+   Stopwatch JavaScript Code
+   Author: Reinaldo
+   Description: Implements a stopwatch functionality with start, stop, and reset buttons.
+*/
+
+// Execute the following code when the window has finished loading
 window.onload = function () {
+	// Selecting elements from the HTML
 	var ms = document.querySelector("#milliseconds");
 	var sec = document.querySelector("#seconds");
 	var min = document.querySelector("#minutes");
@@ -8,26 +16,31 @@ window.onload = function () {
 	var btnStop = document.querySelector("#stop");
 	var btnReset = document.querySelector("#reset");
 
+	// Variables to manage the stopwatch state
 	var interval;
 	var seconds = 0;
 	var milliseconds = 0;
 	var minutes = 0;
 	var hour = 0;
 
+	// Initializing display elements
 	ms.innerHTML = "00";
 	sec.innerHTML = ":00";
 	min.innerHTML = ":00";
 	hr.innerHTML = "00";
 
+	// Event handler for the start button
 	btnStart.onclick = function () {
 		clearInterval(interval);
 		interval = setInterval(start, 10);
 	};
 
+	// Event handler for the stop button
 	btnStop.onclick = function () {
 		clearInterval(interval);
 	};
 
+	// Event handler for the reset button
 	btnReset.onclick = function () {
 		clearInterval(interval);
 		milliseconds = 0;
@@ -40,6 +53,7 @@ window.onload = function () {
 		hr.innerHTML = hour + "0";
 	};
 
+	// Function to handle the stopwatch logic
 	function start() {
 		milliseconds++;
 
