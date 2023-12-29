@@ -1,19 +1,30 @@
+/* 
+   CSS Styles for Stopwatch Web Application
+   Author: Reinaldo
+   Description: Stylesheet for a stopwatch web application. 
+                Defines the layout, colors, and styles.
+*/
+
+/* Global Reset */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* Body Styles */
 html, body {
   font-family: 'poppins';
   background-color: black;
   color: white;
 }
 
+/* Main Container Styles */
 .main {
   text-align: center;
 }
 
+/* Stopwatch Styles */
 .stopwatch-body {
   position: relative;
   max-width: 300px;
@@ -33,6 +44,7 @@ html, body {
   text-align: center;
 }
 
+/* Stopwatch Digits Styles */
 span {
   margin-right: 0.5rem;
   font-size: 2.5rem;
@@ -43,10 +55,12 @@ span#milliseconds {
   font-size: 32px;
 }
 
+/* Button Container Styles */
 .btn-container {
   margin-top: 2rem;
 }
 
+/* Button Styles */
 .main button {
   background-color: #000;
   color: #fff;
@@ -57,6 +71,7 @@ span#milliseconds {
   font-size: 18px;
 }
 
+/* Hover Effect for Buttons */
 .main button:hover {
   background-color: #333;
   color: #fff;
@@ -67,19 +82,23 @@ span#milliseconds {
   font-size: 18px;
 }
 
+/* Footer Styles */
 .footer {
   text-align: center;
   margin-top: 3rem;
 }
 
+/* Social Icons Styles */
 .footer i {
   margin: 0.5rem;
 }
 
+/* Social Links Container Styles */
 .footer .social {
   text-align: center;
 }
 
+/* Individual Social Icon Styles */
 .social i {
   font-size: 24px;
   color: #fff;
