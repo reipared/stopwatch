@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+    <!-- Meta Tags -->
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
 		<link
 			rel="stylesheet"
 			href="https://fonts.googleapis.com/css?family=Poppins"
 		/>
+    <!-- Font Awesome -->
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css"
@@ -14,7 +17,33 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
-		<title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Title-->
+		<title>Stopwatch</title>
 	</head>
-	<body></body>
+	<body>
+    <!-- Main -->
+    <div class="main">
+      <div class="stopwatch-body">
+        <div class="stopwatch-inner-body">
+          <span id="hour"></span><span id="minutes"></span><span id="seconds"></span><sup><span id="milliseconds"></span></sup>
+        </div>
+      </div>
+      <div class="btn-container">
+        <button id="stop">Stop</button><button id="start">Start</button><button id="reset">Reset</button>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+      <p>Created with <i class="fas fa-heart"> by Reinaldo</i></p>
+      <div class="social">
+        <a href="#"> <i class="fab fa-github"></i></a>
+        <a href="#"> <i class="fab fa-linkedin"></a>
+        <a href="#"> <i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+    <!-- JS -->
+    <script src="app.js"></script>
+  </body>
 </html>
